@@ -363,6 +363,7 @@ persistentVolume:
 
 service:
   type: ClusterIP
+  clusterIP: None
   port: 9090
   targetPort: 9090
   # nodePort:
