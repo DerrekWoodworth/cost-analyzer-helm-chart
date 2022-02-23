@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  grafana:
+  - apiVersion: v1
+    appVersion: 6.0.0
+    created: "2022-02-23T15:44:11.83697927Z"
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: f5f84a38ccc8b29603123d1cd661e3d8478ef3185f4e566c459dd4e86a56384d
+    home: https://grafana.net
+    icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    urls:
+    - https://github.com/DerrekWoodworth/cost-analyzer-helm-chart/releases/download/grafana-1.17.2/grafana-1.17.2.tgz
+    version: 1.17.2
+generated: "2022-02-23T15:44:11.563656915Z"
