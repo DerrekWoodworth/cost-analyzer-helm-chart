@@ -4,7 +4,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: {{ template "cost-analyzer.serviceName" . }}
+  name: cost-analyzer-cost-analyzer-headless
   labels:
     {{ include "cost-analyzer.commonLabels" . | nindent 4 }}
 {{- if .Values.service.labels }}
@@ -17,15 +17,8 @@ metadata:
 spec:
   selector:
     {{ include "cost-analyzer.selectorLabels" . | nindent 4 }}
-{{- if .Values.service -}}
-{{- if .Values.service.type }}
-  type: "{{ .Values.service.type }}"
-{{- else }}
   type: ClusterIP
-{{- end }}
-{{- else }}
-  type: ClusterIP
-{{- end }}
+  clusterIP: None
   ports:
     - name: tcp-server
       port: 9001
