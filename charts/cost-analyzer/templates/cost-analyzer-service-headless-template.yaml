@@ -10,9 +10,9 @@ metadata:
 {{- if .Values.service.labels }}
 {{ toYaml .Values.service.labels | indent 4 }}
 {{- end }}
-{{- if .Values.service-headless.annotations }}
+{{- if .Values.serviceHeadless.annotations }}
   annotations:
-{{ toYaml .Values.service-headless.annotations | indent 4 }}
+{{ toYaml .Values.serviceHeadless.annotations | indent 4 }}
 {{- end }}
 spec:
   selector:
